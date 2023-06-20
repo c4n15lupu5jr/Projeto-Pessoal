@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Pagina Pessoal</title>
+    <title>Projeto Pessoal</title>
 </head>
 <body>
-    
-    <div class="container">
-        <section class="one">
-               <h1>First Page</h1>
+    <header>
+        <nav>
+            <h1>Meu Site</h1>
+            <ul>
+                <li><a data-page="sobre" href="#">Sobre</a></li>
+                <li><a data-page="projetos" href="#">Projetos</a></li>
+                <li><a data-page="fim" href="#">Fim</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section data-index="0" class="sobre">
+            <h2>Olá! Me chamo Renan, tenho 14 anos.</h2>
         </section>
-        <section class="two">
-            <h1>Second Page</h1>
-     </section>
-     <section class="three">
-        <h1>Third Page</h1>
-</section>
- <section class="four">
-    <h1>Fourth Page</h1>
-</section>
-    </div>
+        <section data-index="1" class="projetos">
+            <h2>Estou criando este site para praticar minha programação.</h2>
+        </section>
+        <section data-index="2" class="fim">
+            <h2>Espero que tenha gostado, se quiser, olhe meu GitHub para ver outros projetos feito por mim com ajuda de professores!</h2>
+        </section>
+    </main>
 
     <script src="./app.js"></script>
 </body>
